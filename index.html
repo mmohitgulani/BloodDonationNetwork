@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blood Donation Network</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="frontendpage.css">
+    </head>
+    <body>
+	<header id="header">
+            <a href="#" class="logo">Blood Donation Network</a>
+                        <ul>
+				<li><a href="#home" class="active" onclick="toggle()">Home</a></li>
+				<li><a href="#signin" onclick="toggle()">Sign IN</a></li>
+				<li><a href="#signup" onclick="toggle()">Sign UP</a></li>
+				<li><a href="#about" onclick="toggle()">About US</a></li>
+				<li><a href="#services" onclick="toggle()">Services</a></li>
+				<li><a href="#contact" onclick="toggle()">Contact US</a></li>
+			</ul>
+			<div class="toogle" onclick="toggle()"></div>
+		</header>
+		<section id="home">
+			<div>
+			<h2>Blood Donation</h2>
+			<p>This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.</p>
+			<a href="#">Read More</a>
+			</div>
+			<img src="Image/Home.JPG">
+		</section>
+		
+		<section id="signin">
+			<div>
+			<center>
+			<fieldset>
+			<legend>Sign In</legend>
+			<form action="frontendpage.jsp" method="Post">
+			<table>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr> 
+				<tr>
+					<td>Contact No</td>
+					<td></td>
+					<td><input type="text" name="contact" required></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td></td>
+					<td><input type="password" name="password" required></td>
+				</tr>
+			</table><br><br>
+					<input type="submit" value="SIGN IN">
+					</fieldset>
+				</form>
+				</center>
+			</div>
+		</section>
+		
+		<section id="signup">
+			<div>
+			<center>
+			<fieldset>
+			<legend>Sign UP</legend>
+			<form action="getotp.jsp" method="Post">
+			<table>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr> 
+				<tr>
+					<td>Contact No</td>
+					<td></td>
+					<td><input type="text" name="contact" required></td>
+				</tr>
+				<tr>
+					<td>Create Password</td>
+					<td></td>
+					<td><input type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<td>OTP</td>
+					<td></td>
+					<td><input type="text" name="otp"></td>
+                                </tr>
+                                
+			</table><br>
+                        <input type="submit" value="Get OTP">
+                        </form>
+					</fieldset>
+                            
+			</center>
+			</div>
+		</section>
+		
+		<section id="about">
+			<div>
+			<h2>About US</h2>
+			<p>This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.</p>
+			</div>
+			<img src="Image/AboutUs.JPG">
+		</section>
+		
+		<section id="services">
+			<div>
+			<h2>Our Services</h2>
+			<p>This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.</p>
+			</div>
+			<img src="Image/OurServices.jpg">
+		</section>
+		
+		<section id="contact">
+			<div>
+			<h2>Contact US</h2>
+			<p>This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.
+			This is Blood Donation website.This is Blood Donation website.This is Blood Donation website.</p>
+			</div>
+			<img src="Image/ContactUs.jpg">
+		</section>
+		
+		<script type="text/javascript">
+		function  toggle()
+		{
+			var header=document.getElementById("header")
+			header.classList.toggle('active')
+		}
+		</script>
+		
+    </body>
+</html>
